@@ -29,6 +29,7 @@ width: 100vw;
   bottom: 0;
   left: 1px;
 }
+
 .bubbl-canvas{
   z-index: 1;
   height: 800px;
@@ -51,15 +52,62 @@ height: 450px;
 width: 150px;
 position: absolute;
 bottom: 2px;
-right: -10spx;
+right: -10px;
 z-index: 3;
 }
-
+@keyframes go-left {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 1000px;
+  }
+}
+#fish5 {
+  animation: go-left 7s ease-out 1 4s forwards;
+  position: relative;
+  }
+#fish6 {
+  animation: go-left 3s ease-in-out 1 6s forwards;
+  position: relative;
+}  
+#fish7 {
+  animation: go-left 4s ease-in 1 2s forwards;
+  position: relative;
+  }
+#fish8 {
+  animation: go-left 3s linear 1 0.5s forwards;
+  position: relative;
+}
 .slow-fish{
   height: 450px;
   width: 150px;
   position: absolute;
-  top: 350px;
-  left: 0;
+  top: 296px;
+  left: -30px;
   z-index: 2;
+}
+@keyframes go-right {
+  from {
+    right: 0px;
+  }
+  to {
+    right: 970px;
+  }
+}
+#fish1 {
+  animation: go-right 6s ease 1 1s forwards;
+  position: relative;
+  }
+#fish2 {
+  animation: go-right 5s ease-in-out 1 4s forwards;
+  position: relative;
+}  
+#fish3 {
+  animation: go-right 3s ease-in 1 1s forwards;
+  position: relative;
+  }
+#fish4 {
+  animation: go-right 3s linear 1 0s forwards;
+  position: relative;
 }
