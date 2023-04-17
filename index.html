@@ -1,35 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./CSS/style.css">
-  <title>first fishing</title>
-</head>
-<body>
-  <div class="screen">
-  <div class="background">
-  <a href="#" class="start" id="start">Начать игру</a>
-  <h3>Осталось<span id="time">00:00</span></h3>
-  <canvas class="bubbl-canvas" id="bubbl-canvas"></canvas>
-  <canvas class="bubbl1-canvas" id="bubbl-canvas"></canvas>
-  <div class="foreground"></div>
-  <div class="fast-fish">
-    <img class="fish1" id="fish1" src="./img/рыбка1.png">
-    <img class="fish2" id="fish2" src="./img/рыбка2.png">
-    <img class="fish3" id="fish3" src="./img/рыбка3.png">
-    <img class="fish4" id="fish4" src="./img/рыбка4.png">
-  </div>
-  <div class="slow-fish">
-    <img class="fish5" id="fish5" src="./img/рыбка5.png">
-    <img class="fish6" id="fish6" src="./img/рыбка6.png">
-    <img class="fish7" id="fish7" src="./img/рыбка7.png">
-    <img class="fish8" id="fish8" src="./img/рыбка8.png">
-  </div>
- </div>
- 
-</div>
-<script src="index.js/canvas.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>first fishing</title>
+  </head>
+  <body>
+    <div class="screen">
+      <div class="background">
+        <button class="start" id="start">Порыбачим</button>
+        <div id="timer"></div>
+        <div id="text"></div>
+
+        <canvas class="bubbl-canvas" id="bubbl-canvas"></canvas>
+        <div class="frontleft"></div>
+        <div class="frontright"></div>
+        <div class="seaweed"></div>
+        <div class="coral"></div>
+        <div class="fast-fish">
+          <img
+            class="fish"
+            id="fish1"
+            src="./img/рыбка1.png"
+            draggable="false"
+          />
+          <img
+            class="fish"
+            id="fish2"
+            src="./img/рыбка2.png"
+            draggable="false"
+          />
+          <img
+            class="fish"
+            id="fish3"
+            src="./img/рыбка3.png"
+            draggable="false"
+          />
+          <img
+            class="fish"
+            id="fish4"
+            src="./img/рыбка4.png"
+            draggable="false"
+          />
+        </div>
+        <div class="slow-fish">
+          <img
+            class="fish"
+            id="fish5"
+            src="./img/рыбка5.png"
+            draggable="false"
+          />
+          <img
+            class="fish"
+            id="fish6"
+            src="./img/рыбка6.png"
+            draggable="false"
+          />
+          <img
+            class="fish"
+            id="fish7"
+            src="./img/рыбка7.png"
+            draggable="false"
+          />
+          <img
+            class="fish"
+            id="fish8"
+            src="./img/рыбка8.png"
+            draggable="false"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="js/canvas.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
