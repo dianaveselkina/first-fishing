@@ -88,6 +88,85 @@ h2 {
   bottom: 2px;
   left: 437px;
 }
+
+.jellyfish {
+  offset-rotate: reverse;
+  offset-rotate: 0deg;
+  offset-rotate: auto;
+}
+
+.jellyfish {
+  offset-path: path(
+    'M1.00002 841C44.4668 770.851 261.801 852.295 440.713 622.826C619.626 393.357 571.114 337.773 861.022 223.038C1092.95 131.251 1099.44 36.7679 1073.7 1'
+  );
+  animation: move 12s linear infinite;
+}
+@keyframes move {
+  to {
+    offset-distance: 100%;
+  }
+}
+
+.jellyfish {
+  width: 100px;
+  height: 100px;
+  background: url(../img/медуза6.png) no-repeat;
+  position: absolute;
+  left: 5%;
+  top: 1px;
+}
+.jellyfish1 {
+  offset-rotate: reverse;
+  offset-rotate: 0deg;
+  offset-rotate: auto;
+}
+
+.jellyfish1 {
+  offset-path: path(
+    'M11.9999 872C155 523.5 55.4999 355 11.9999 262C-22.8001 187.6 30.4999 56.6667 61.4999 0.5'
+  );
+  animation: move 8s linear infinite;
+}
+@keyframes move {
+  to {
+    offset-distance: 100%;
+  }
+}
+
+.jellyfish1 {
+  width: 100px;
+  height: 100px;
+  background: url(../img/медуза7.png) no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 1px;
+}
+.jellyfish2 {
+  offset-rotate: reverse;
+  offset-rotate: 0deg;
+  offset-rotate: auto;
+}
+
+.jellyfish2 {
+  offset-path: path(
+    'M1136 954C1090.45 874.415 862.677 966.815 675.174 706.476C487.671 446.138 538.512 383.077 234.684 252.908C-8.37812 148.772 -15.1841 41.5795 11.7957 1'
+  );
+  animation: move 10s linear infinite;
+}
+@keyframes move {
+  to {
+    offset-distance: 100%;
+  }
+}
+
+.jellyfish2 {
+  width: 100px;
+  height: 100px;
+  background: url(../img/медуза8.png) no-repeat;
+  position: absolute;
+  left: 20%;
+  top: 1px;
+}
 .bubbl-canvas {
   z-index: 1;
   height: 800px;
@@ -120,11 +199,11 @@ h2 {
   }
 }
 #fish5.fish-active {
-  animation: go-left 9s ease-out 1 4s forwards;
+  animation: go-left 11s ease-out 1 4s forwards;
   position: relative;
 }
 #fish6.fish-active {
-  animation: go-left 7s ease-in-out 1 6s forwards;
+  animation: go-left 9s ease-in-out 1 6s forwards;
   position: relative;
 }
 #fish7.fish-active {
@@ -160,10 +239,10 @@ h2 {
   position: relative;
 }
 #fish3.fish-active {
-  animation: go-right 7s ease-in 1 1s forwards;
+  animation: go-right 10s ease-in 1 1s forwards;
   position: relative;
 }
 #fish4.fish-active {
-  animation: go-right 5s linear 1 0s forwards;
+  animation: go-right 7s linear 1 0s forwards;
   position: relative;
 }
