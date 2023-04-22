@@ -16,7 +16,7 @@ timer = setInterval(function () {
   seconds = timeMinut % 60;
 
   if (timeMinut <= 0) {
-    timerShow.innerHTML = 'Вемя вышло...';
+    timerShow.innerHTML = 'Время вышло...';
     clearInterval(timer);
   } else {
     let strTimer = `${0}:${seconds}`;
@@ -41,4 +41,10 @@ for (let fish of fishs) {
     count += 1;
     text.innerHTML = 'Ваш улов: ' + count + ' шт.';
   };
+}
+
+for (let fish of fishs) {
+  setTimeout(function () {
+    fish.style.display = 'none';
+  }, 13000);
 }

@@ -198,18 +198,12 @@ h2 {
     left: 1000px;
   }
 }
-#fish5.fish-active {
-  animation: go-left 11s ease-out 1 4s forwards;
-  position: relative;
-}
+
 #fish6.fish-active {
   animation: go-left 9s ease-in-out 1 6s forwards;
   position: relative;
 }
-#fish7.fish-active {
-  animation: go-left 8s ease-in 1 2s forwards;
-  position: relative;
-}
+
 #fish8.fish-active {
   animation: go-left 9s linear 1 0.5s forwards;
   position: relative;
@@ -245,4 +239,40 @@ h2 {
 #fish4.fish-active {
   animation: go-right 7s linear 1 0s forwards;
   position: relative;
+}
+
+#fish7.fish-active {
+  offset-rotate: reverse;
+  offset-rotate: 0deg;
+  offset-rotate: auto;
+}
+
+#fish7.fish-active {
+  offset-path: path(
+    'M1 63C153.227 43.4129 317.535 -8.63284 457.681 2.55979C597.826 13.7524 578.496 45.0918 723.474 46.7707C839.456 48.1138 1021.48 36.1377 1098 29.9817'
+  );
+  animation: move 8s ease-in 1 2s forwards;
+}
+@keyframes move {
+  to {
+    offset-distance: 100%;
+  }
+}
+
+#fish5.fish-active {
+  offset-rotate: reverse;
+  offset-rotate: 0deg;
+  offset-rotate: auto;
+}
+
+#fish5.fish-active {
+  offset-path: path(
+    'M1 161C65 89 253 -23 357 5C461 33 565 161 685 161C805 161 917 57 1005 109C1075.4 150.6 1122.33 193 1137 209'
+  );
+  animation: move 10s ease-out 1 4s forwards;
+}
+@keyframes move {
+  to {
+    offset-distance: 100%;
+  }
 }
